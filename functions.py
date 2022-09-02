@@ -3,8 +3,6 @@ import pandas as pd
 import streamlit as st
 import datetime
 
-#buraya st.config ... yazarak sayfa görünümünü geniş yapabilirsin
-#st.set_page_config(Layout="wide") ama bunu buraya değil sayfaların her birinin içine yap örn:ürünlere
 conn=sqlite3.connect("serviscrm.db")
 c=conn.cursor()
 c.execute("""CREATE TABLE IF NOT EXISTS modeller(
